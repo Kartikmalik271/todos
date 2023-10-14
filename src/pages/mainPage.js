@@ -147,7 +147,7 @@ const MainPage = () =>{
         <div style={{display:'flex', justifyContent: isSmallScreen?'':'space-between', flexDirection:isSmallScreen?'column':'row', alignItems:'center'}}>
             
             <Button variant="contained" color="primary" sx={{px:5,mb:isSmallScreen?3:''}} onClick={(e)=>openModal("add")} fullWidth={isSmallScreen?true:false}>
-                Add
+                Add Todos
             </Button>
 
             <ToggleButtonGroup
