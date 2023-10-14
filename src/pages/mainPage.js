@@ -199,7 +199,7 @@ const MainPage = () =>{
                             </Grid>
                             <Grid item xs={10} onClick={(e)=>handleStatusChange(item)}>
                             <Typography variant='p'>{item.title}</Typography><br/>
-                            <Typography variant='p' sx={{fontSize:'small',fontWeight:'light',color:'grey'}}>{item.completed ? "@completed":"@pending"}</Typography>
+                            <Typography variant='p' sx={{fontSize:'small',fontWeight:'light',color:'gray'}}>{item.completed ? "@completed":"@pending"}</Typography>
                             </Grid>
                             <Grid item xs={1} sx={{justifyContent:'center'}}>
                                 <Button id="basic-button"
