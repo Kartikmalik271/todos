@@ -1,4 +1,4 @@
-# React Contact Management App
+# React Todos App
 
 This is a simple todos application built using React and Material-UI. It allows users to display/create/update/delete their todos tasks.
 
@@ -33,7 +33,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## API Endpoint
-The application uses a third-party API to fetch COVID-19 data. The API endpoint used for fetching overall COVID-19 data is: 
+The application uses a  API to fetch todos data. The API endpoint used is: 
 
 'https://jsonplaceholder.typicode.com/users/1/todos' - to fetch todos records
  
