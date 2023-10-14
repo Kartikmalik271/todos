@@ -28,6 +28,7 @@ const MainPage = () =>{
 
     const [loading,setLoading]=useState(true)
     const [data,setData]=useState([])
+    const [dataCount,setDataCount]=useState(null)
     const [alertMsg,setAlertMsg]=useState('')
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -86,7 +87,12 @@ const MainPage = () =>{
 // function to handle form submission through generic modal
     const handleFormSubmit = (action,formData)=>{
         if (action==='add'){
-            setData((prevData=> [...prevData,formData]))
+            const temp={
+                id:dataCount+1,
+                ...formData
+            }
+            setData((prevData=> [...prevData,temp]))
+            setDataCount( prev=>prev+1)
             closeModal()
             setAlertMsg("added successfully")
 
@@ -128,6 +134,7 @@ const MainPage = () =>{
         try{
             const res = await fetchData(dataUrl)  
             setData(res)
+            setDataCount(res.length)
             setLoading(false)
         }catch(err){
             console.log(err)

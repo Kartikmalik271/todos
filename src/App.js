@@ -13,6 +13,7 @@ function App() {
         padding: '20px',
         background: 'linear-gradient(45deg, #E57373 30%, #FFA07A 90%)',
         color: 'white',
+        minHeight:'100vh'
       }}
     >
       <Box>

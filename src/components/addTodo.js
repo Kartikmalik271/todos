@@ -9,7 +9,7 @@ const AddTodo = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      id: Math.random() * 10000,
+    //   id: Math.random() * 10000,
       title,
       completed: false,
     };
